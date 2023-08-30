@@ -1,11 +1,8 @@
 import Image from "next/image"
 
-export default async function FeaturedBlog() {
-
-  const blog = await fetch('https://buying-bahia.vercel.app/api/blog').then(res => res.json())
+export default function FeaturedBlog({blog}) {
 
   const feature = blog.posts.filter(post => post.id === blog.featured.primary)[0]
-
   const grid = blog.posts.filter(post => blog.featured.grid.includes(post.id))
 
   return (

@@ -1,15 +1,9 @@
 import Image from "next/image"
 import { MdLocationPin, MdOutlineHomeWork, MdAttachMoney } from 'react-icons/md'
 
-export default async function Featured() {
+export default function Featured({properties}) {
 
-    const featured = ['34981','39068','39864','39454']
 
-    const properties = await fetch('https://buying-bahia.vercel.app/api/featured', {  
-        method: 'POST',
-        body: JSON.stringify(featured)
-    }).then((res) => res.json())
-    
     return (
         <section className="grid grid-cols-1 md:grid-cols-2">
             {properties?.map((property, i) => {
