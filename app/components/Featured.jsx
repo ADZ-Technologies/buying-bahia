@@ -6,9 +6,9 @@ export default function Featured({properties}) {
 
     return (
         <section className="grid grid-cols-1 md:grid-cols-2">
-            {properties?.map((property, i) => {
+            {properties?.map((property) => {
                 return (
-                    <div className="relative h-[calc(100vh/2)] group overflow-hidden">
+                    <div key={property.id} className="relative h-[calc(100vh/2)] group overflow-hidden">
                         <Image  
                             loading="eager"
                             src={property.images[0].seoImage} 
