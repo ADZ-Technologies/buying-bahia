@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    @apply font-body;
+}
+
+h1, h2, h3 {
+    @apply font-brand;
+}
+
+.heroText {
+    @apply flex flex-col absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 font-brand w-max;
+    animation: hero 6s;
+}
+
+.button {
+    @apply px-6 py-5 bg-gradient-to-b from-transparent to-sky-500/50 font-medium drop-shadow-lg text-xl text-neutral-50 rounded-sm hover:brightness-125;
+}
+
+@keyframes hero {
+    0% { 
+        opacity: 0;
+    }
+    100% { 
+        opacity: 1;
+    }
+  }
