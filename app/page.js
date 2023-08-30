@@ -1,7 +1,7 @@
-import Hero from "../components/Hero"
-import Featured from "../components/Featured"
-import MeetEvelina from "../components/MeetEvelina"
-import FeaturedBlog from "../components/FeaturedBlog"
+import Hero from "./components/Hero"
+import Featured from "./components/Featured"
+import MeetEvelina from "./components/MeetEvelina"
+import FeaturedBlog from "./components/FeaturedBlog"
 
 const page = async () => {
 
