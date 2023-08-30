@@ -16,9 +16,9 @@ const page = async () => {
   return (
     <main>
       <Hero /> 
-      <Featured properties={properties} />
+      {properties && <Featured properties={properties} /> }  
       <MeetEvelina />
-      <FeaturedBlog blog={blog} />
+      {blog && <FeaturedBlog blog={blog} /> }
     </main> 
   )
 }
