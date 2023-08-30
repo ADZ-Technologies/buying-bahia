@@ -7,23 +7,23 @@ const Footer = () => {
     const navMenu = [
         {
             title: 'Properties',
-            path: '/properties'
+            path: '#'
         },
         {
             title: 'Locations',
-            path: '/regions'
+            path: '#'
         },
         {
             title: 'Search',
-            path: '/mls-search'
+            path: '#'
         },
         {
             title: 'About',
-            path: '/about'
+            path: '#'
         },
         {
             title: 'Contact',
-            path: '/contact'
+            path: '#'
         },
     ]
 
@@ -61,7 +61,7 @@ const Footer = () => {
             </a>
             <Link
                 title="Contact"
-                href="/contact"
+                href="#"
             >
                 <IoChatboxEllipsesOutline
                     className="hover:scale-105 hover:text-sky-400 drop-shadow-lg"

@@ -2,7 +2,7 @@ import Image from "next/image"
 
 async function FeaturedBlog() {
 
-  const blog = await fetch('http://localhost:3000/api/blog').then(res => res.json())
+  const blog = await fetch('https://buying-bahia.vercel.app/api/blog').then(res => res.json())
 
   const feature = blog.posts.filter(post => post.id === blog.featured.primary)[0]
 

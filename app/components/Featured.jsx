@@ -5,7 +5,7 @@ export default async function Featured() {
 
     const featured = ['34981','39068','39864','39454']
 
-    const properties = await fetch('http://localhost:3000/api/featured', {  
+    const properties = await fetch('https://buying-bahia.vercel.app/api/featured', {  
         method: 'POST',
         body: JSON.stringify(featured)
     }).then((res) => res.json())
