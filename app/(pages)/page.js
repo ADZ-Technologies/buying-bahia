@@ -3,7 +3,7 @@ import Featured from "../components/Featured"
 import MeetEvelina from "../components/MeetEvelina"
 import FeaturedBlog from "../components/FeaturedBlog"
 
-const Home = async () => {
+const page = async () => {
 
   const blog = await fetch(process.env.NODE_ENV === 'development' ? 'http://localhost:3000/api/blog' : 'https://buying-bahia.vercel.app/api/blog').then(res => res.json())
   const featured = ['34981','39068','39864','39454']
@@ -23,4 +23,4 @@ const Home = async () => {
   )
 }
 
-export default Home
+export default page
