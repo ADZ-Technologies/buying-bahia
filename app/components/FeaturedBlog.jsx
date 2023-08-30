@@ -34,7 +34,7 @@ export default function FeaturedBlog() {
             title: "Retire 15 Years Early By Moving To Mexico",
             slug: "",
             caption: "Saving for retirement can be difficult, but what if you could retire early and start enjoying the laidback lifestyle in an idyllic paradise? Good news, moving to Mexico to retire early is a real option. Let us tell you how you can start living a truly remarkable life more than a decade sooner than you ever expected.",
-            image: "https://plus.unsplash.com/premium_photo-1664302571436-3393ed1f3819?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1030&q=80",
+            image: "/retirement-blog.avif",
         },
         {
             id: '005',

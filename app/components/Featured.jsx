@@ -1,7 +1,7 @@
 import Image from "next/image"
 import { MdLocationPin, MdOutlineHomeWork, MdAttachMoney } from 'react-icons/md'
 
-export default async function Featured() {
+export default function Featured() {
 
     const properties = [
         {
