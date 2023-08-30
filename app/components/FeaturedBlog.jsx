@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-async function FeaturedBlog() {
+export default async function FeaturedBlog() {
 
   const blog = await fetch('https://buying-bahia.vercel.app/api/blog').then(res => res.json())
 
@@ -60,4 +60,3 @@ async function FeaturedBlog() {
     </section>
   )
 }
-export default FeaturedBlog
